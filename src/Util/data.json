@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "city": "Warszawa",
+    "title": "Nowoczesny dom w centrum",
+    "description": "Przestronne mieszkanie dwupokojowe z kuchnią otwartą na salon, idealne dla młodych profesjonalistów.",
+    "price": 450000,
+    "image": "https://www.galeriadomow.pl/filebase/720/viz/viz_1_pano.jpg",
+    "date": "2021-07-25",
+    "type": "dom"
+  },
+  {
+    "id": 2,
+    "city": "Warszawa",
+    "title": "Urokliwe studio na Mokotowie",
+    "description": "Idealne dla studenta lub młodej pary, blisko do komunikacji miejskiej i parków.",
+    "price": 350000,
+    "image": "https://cdn.galleries.smcloud.net/t/galleries/gf-CTpp-Bt8a-k6zp_mieszkanie-664x442.jpg",
+    "date": "2022-07-25",
+    "type": "mieszkanie"
+  },
+  {
+    "id": 3,
+    "city": "Warszawa",
+    "title": "Apartament z widokiem na Wisłę",
+    "description": "Luksusowy apartament z balkonem i widokiem na rzekę, w pełni wyposażony i gotowy do zamieszkania.",
+    "price": 1200000,
+    "image": "https://cdn.galleries.smcloud.net/t/galleries/gf-CTpp-Bt8a-k6zp_mieszkanie-664x442.jpg",
+    "date": "2023-07-25",
+    "type": "mieszkanie"
+  },
+  {
+    "id": 4,
+    "city": "Poznań",
+    "title": "Mieszkanie w centrum Starego Miasta",
+    "description": "Zabytkowa nieruchomość po generalnym remoncie, blisko do rynku i atrakcji turystycznych.",
+    "price": 500000,
+    "image": "https://www.galeriadomow.pl/filebase/720/viz/viz_1_pano.jpg",
+    "date": "2024-07-25",
+    "type": "dom"
+  },
+  {
+    "id": 5,
+    "city": "Poznań",
+    "title": "Przestronny apartament na Grunwaldzie",
+    "description": "Ciche i spokojne mieszkanie z trzema pokojami, idealne dla rodziny. Blisko do parku i łatwy dostęp do komunikacji miejskiej.",
+    "price": 600000,
+    "image": "https://cdn.galleries.smcloud.net/t/galleries/gf-CTpp-Bt8a-k6zp_mieszkanie-664x442.jpg",
+    "date": "2019-07-25",
+    "type": "mieszkanie"
+  },
+  {
+    "id": 6,
+    "city": "Poznań",
+    "title": "Klimatyczne mieszkanie w kamienicy",
+    "description": "Niewielkie, ale przytulne mieszkanie w odnowionej kamienicy, w sercu Jeżyc. Pełne charakteru i lokalnego klimatu.",
+    "price": 400000,
+    "image": "https://cdn.galleries.smcloud.net/t/galleries/gf-CTpp-Bt8a-k6zp_mieszkanie-664x442.jpg",
+    "date": "2018-07-25",
+    "type": "mieszkanie"
+  },
+  {
+    "id": 7,
+    "city": "Katowice",
+    "title": "Nowoczesny dom w centrum",
+    "description": "Luksusowy apartament blisko Spodka i nowego centrum kulturalnego miasta. Idealny dla osób ceniących miejski styl życia.",
+    "price": 750000,
+    "image": "https://www.galeriadomow.pl/filebase/720/viz/viz_1_pano.jpg",
+    "date": "2017-07-25",
+    "type": "dom"
+  },
+  {
+    "id": 8,
+    "city": "Katowice",
+    "title": "Mieszkanie w zielonej okolicy",
+    "description": "Ciche i komfortowe mieszkanie z balkonem, otoczone zielenią. Blisko do parku i łatwy dostęp do środków komunikacji.",
+    "price": 500000,
+    "image": "https://cdn.galleries.smcloud.net/t/galleries/gf-CTpp-Bt8a-k6zp_mieszkanie-664x442.jpg",
+    "date": "2016-07-25",
+    "type": "mieszkanie"
+  },
+  {
+    "id": 9,
+    "city": "Katowice",
+    "title": "Studio idealne dla studenta",
+    "description": "Małe, ale funkcjonalnie zaprojektowane studio w pobliżu uczelni wyższych. Doskonałe dla studenta lub młodego profesjonalisty.",
+    "price": 300000,
+    "image": "https://cdn.galleries.smcloud.net/t/galleries/gf-CTpp-Bt8a-k6zp_mieszkanie-664x442.jpg",
+    "date": "2020-07-25",
+    "type": "mieszkanie"
+  },
+  {
+    "id": 10,
+    "city": "Kraków",
+    "title": "Elegancki apartament w historycznym centrum",
+    "description": "Przestronny apartament znajdujący się w sercu Krakowa, zaledwie kilka kroków od Rynku Głównego. Idealny dla osób ceniących historię i kulturę miasta.",
+    "price": 900000,
+    "image": "https://cdn.galleries.smcloud.net/t/galleries/gf-CTpp-Bt8a-k6zp_mieszkanie-664x442.jpg",
+    "date": "2021-07-25",
+    "type": "mieszkanie"
+  },
+  {
+    "id": 11,
+    "city": "Kraków",
+    "title": "Nowoczesny dom blisko Kazimierza",
+    "description": "dom w pełni wyposażony, w nowym budownictwie, z szybkim dostępem do najbardziej kultowych miejsc Krakowa. Idealne dla młodych profesjonalistów.",
+    "price": 650000,
+    "image": "https://cdn.galleries.smcloud.net/t/galleries/gf-CTpp-Bt8a-k6zp_mieszkanie-664x442.jpg",
+    "date": "2022-07-25",
+    "type": "mieszkanie"
+  },
+  {
+    "id": 12,
+    "city": "Kraków",
+    "title": "Urokliwe studio na Podgórzu",
+    "description": "Kompaktowe, ale jasne i przestronne studio, idealne dla singla lub młodej pary. Blisko do centrów kulturalnych i zielonych obszarów rekreacyjnych.",
+    "price": 350000,
+    "image": "https://cdn.galleries.smcloud.net/t/galleries/gf-CTpp-Bt8a-k6zp_mieszkanie-664x442.jpg",
+    "date": "2032-07-25",
+    "type": "mieszkanie"
+  },
+  {
+    "id": 13,
+    "city": "Wrocław",
+    "title": "Przestronne mieszkanie na Starym Mieście",
+    "description": "Wyjątkowe mieszkanie z dużym balkonem, w otoczeniu zabytków i życia kulturalnego Wrocławia. Idealne dla osób ceniących uroki życia w centrum.",
+    "price": 800000,
+    "image": "https://cdn.galleries.smcloud.net/t/galleries/gf-CTpp-Bt8a-k6zp_mieszkanie-664x442.jpg",
+    "date": "2021-07-25",
+    "type": "mieszkanie"
+  },
+  {
+    "id": 14,
+    "city": "Wrocław",
+    "title": "Nowoczesny loft w sercu miasta",
+    "description": "Loft z otwartą przestrzenią i wysokimi sufitami, położony blisko Rynku. Doskonały dla osób szukających miejskiego stylu życia.",
+    "price": 700000,
+    "image": "https://cdn.galleries.smcloud.net/t/galleries/gf-CTpp-Bt8a-k6zp_mieszkanie-664x442.jpg",
+    "date": "2024-07-25",
+    "type": "mieszkanie"
+  },
+  {
+    "id": 15,
+    "city": "Wrocław",
+    "title": "Kompaktowe studio idealne dla studenta",
+    "description": "Małe, ale wygodnie urządzone studio w cichej okolicy, z łatwym dostępem do uczelni i centrum miasta. Idealne dla studentów.",
+    "price": 3029822,
+    "image": "https://www.galeriadomow.pl/filebase/720/viz/viz_1_pano.jpg",
+    "date": "2021-07-25",
+    "type": "dom"
+  }
+]
