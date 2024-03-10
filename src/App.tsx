@@ -15,7 +15,7 @@ const routers = (
     path='/'
     element={<RootLayout />}
     loader={dropdownLoader}
-    errorElement={<Error />}
+    errorElement={<HomePage />}
   >
     <Route index element={<HomePage />} />
     <Route path='/details/:id' index element={<DetailsPage />} />
