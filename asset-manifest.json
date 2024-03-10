@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/HomeSpot/static/css/main.ab27fefc.css",
-    "main.js": "/HomeSpot/static/js/main.cf415165.js",
+    "main.js": "/HomeSpot/static/js/main.984ec736.js",
     "static/js/453.ccc1373c.chunk.js": "/HomeSpot/static/js/453.ccc1373c.chunk.js",
     "static/media/poznan.png": "/HomeSpot/static/media/poznan.9efe0aeca6877b16efa5.png",
     "static/media/polska.png": "/HomeSpot/static/media/polska.296613ed32277ab8ae06.png",
@@ -11,11 +11,11 @@
     "static/media/katowice.png": "/HomeSpot/static/media/katowice.5f808e615a762176355f.png",
     "index.html": "/HomeSpot/index.html",
     "main.ab27fefc.css.map": "/HomeSpot/static/css/main.ab27fefc.css.map",
-    "main.cf415165.js.map": "/HomeSpot/static/js/main.cf415165.js.map",
+    "main.984ec736.js.map": "/HomeSpot/static/js/main.984ec736.js.map",
     "453.ccc1373c.chunk.js.map": "/HomeSpot/static/js/453.ccc1373c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ab27fefc.css",
-    "static/js/main.cf415165.js"
+    "static/js/main.984ec736.js"
   ]
 }
