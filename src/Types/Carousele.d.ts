@@ -1,0 +1,3 @@
+type CarouseleProps = {
+  imgs: string[];
+};

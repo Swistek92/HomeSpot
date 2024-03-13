@@ -9,6 +9,8 @@ import Error from "./Pages/Error";
 import HomePage from "./Pages/HomePage";
 import DetailsPage from "./Pages/DetailsPage";
 import { loader as dropdownLoader } from "./Components/Dropdown";
+import Blog from "./Pages/Blog";
+import BlogPost from "./Pages/BlogPost";
 
 const routers = (
   <Route
@@ -19,6 +21,8 @@ const routers = (
   >
     <Route index element={<HomePage />} /> /
     <Route path='details/:id' element={<DetailsPage />} />
+    <Route path='blog' element={<Blog />} />
+    <Route path='blog/:id' element={<BlogPost />} />
   </Route>
 );
 

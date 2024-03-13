@@ -1,4 +1,4 @@
-import krakow from "./katowice.png";
+import krakow from "./krakow.png";
 import wroclaw from "./wroclaw.png";
 import katowice from "./katowice.png";
 import warszawa from "./warszawa.png";
