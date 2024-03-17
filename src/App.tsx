@@ -4,16 +4,10 @@ import {
   Route,
   createBrowserRouter,
 } from "react-router-dom";
-import RootLayout from "./Pages/RootLayout";
-import Error from "./Pages/Error";
-import HomePage from "./Pages/HomePage";
-import DetailsPage from "./Pages/DetailsPage";
-import { loader as dropdownLoader } from "./Components/Dropdown";
-import Blog from "./Pages/Blog";
-import BlogPost from "./Pages/BlogPost";
-import dataAdvertisement from "./Util/dataAdvertisement.json";
-import dataArticles from "./Util/dataArticles.json";
 import React from "react";
+import { dataAdvertisement, dataArticles } from "./Util";
+import { Blog, BlogPost, DetailsPage, Error, HomePage, RootLayout } from "./Pages";
+import { dropdownLoader } from "./Components";
 
 const globalData: GlobalData = [dataAdvertisement, dataArticles];
 

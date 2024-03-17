@@ -83,3 +83,7 @@ type Country = {
     regex: string;
   };
 };
+
+type LoadedData = {
+  loadedCountries: Country[];
+};

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Carousele from "../Components/Carousele";
+import { Carousele } from "../Components";
 import { context } from "../App";
 
 const BlogPost = () => {

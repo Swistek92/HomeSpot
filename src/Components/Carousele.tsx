@@ -54,15 +54,17 @@ const Carousele: React.FC<CarouseleProps> = ({ imgs, className }) => {
 
   return (
     <div
-      className={`flex flex-col items-center justify-center ${className || ""}`}
+      className={`flex flex-col items-center justify-center  ${
+        className || ""
+      }`}
       {...handlers}
       onDoubleClick={handleFullScreen}
     >
-      <div className='relative' ref={carouselRef}>
+      <div className='relative ' ref={carouselRef}>
         <img
           src={imgs[currentIndex]}
           alt='Carousel slide'
-          className='w-auto h-90'
+          className='w-full h-full	'
           onMouseEnter={() => clearTimeout(autoSlideTimeout.current)}
           onMouseLeave={resetAutoSlideTimer}
         />

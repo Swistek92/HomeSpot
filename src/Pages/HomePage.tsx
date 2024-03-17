@@ -10,7 +10,7 @@ import {
 } from "../Assets/herb";
 import { useContext, useState } from "react";
 import { context } from "../App";
-import data from "../Util/dataAdvertisement.json";
+
 const Herbs: Herbs = {
   default: polska,
   kraków: krakow,
@@ -26,11 +26,13 @@ const SortOrder = {
   DateDesc: "date_desc",
   DateAsc: "date_asc",
 } as const;
+
 const Apartments = {
   Flat: "mieszkanie",
   Home: "dom",
   All: "All",
 } as const;
+
 type TypeSortOder = keyof typeof SortOrder;
 type TypeApartments = keyof typeof Apartments;
 
@@ -84,7 +86,7 @@ const HomePage = () => {
   return (
     <div>
       {/* filters */}
-      <div className=' grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 p-4 gap-4'>
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 p-4 gap-6'>
         <select
           value={sortBy}
           onChange={handleChangeSortBy}

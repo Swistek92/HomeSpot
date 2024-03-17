@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { context } from "../App";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
-import Carousele from "../Components/Carousele";
+import { Carousele } from "../Components";
 
 const DetailsPage = () => {
   const { id } = useParams();

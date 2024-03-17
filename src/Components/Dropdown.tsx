@@ -2,10 +2,6 @@ import React, { Suspense } from "react";
 import { Await, defer, useLoaderData } from "react-router-dom";
 import { getCountries } from "../Util/api";
 
-type LoadedData = {
-  loadedCountries: Country[];
-};
-
 const DropdownSelect = ({ countries }: { countries: Country[] }) => {
   return (
     <select className='block w-full mt-1 bg-gray-300 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50'>
