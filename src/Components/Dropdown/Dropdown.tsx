@@ -3,7 +3,7 @@ import { Await, defer, useLoaderData } from "react-router-dom";
 import { getCountries } from "../../Util/api";
 import DropdownSelect from "./DropdownSelect";
 
-const Dropdown = () => {
+const Dropdown: React.FC = () => {
   const loadedData = useLoaderData() as LoadedData;
   return (
     <>

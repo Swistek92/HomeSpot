@@ -1,10 +1,14 @@
 import { CustomError } from "./costomError";
 
-export const getCountries = async () => {
+type GetCountryResponse = Country[];
+
+export const getCountries = async (): Promise<GetCountryResponse> => {
   const response = await fetch("https://restcountries.com/v3.1/all");
-  console.log(response);
   if (!response.ok) {
     throw new CustomError("something went wrong", 404);
   }
-  return response.json();
+
+  const countries: GetCountryResponse = await response.json();
+
+  return countries;
 };

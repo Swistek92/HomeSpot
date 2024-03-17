@@ -1,6 +1,6 @@
 import { ContactButton } from "../Components";
 
-const Error = () => {
+const Error: React.FC = () => {
   return (
     <div>
       <h5>Something went wrong ________ zaparszamy do Kontaktu</h5>

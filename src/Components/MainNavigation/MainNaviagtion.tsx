@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { Dropdown } from "..";
 import { logo } from "../../Assets";
-function MainNavigation() {
+const MainNavigation: React.FC = () => {
   return (
     <header className='flex  justify-between items-center py-5 sticky top-0  bg-gray-500 border-b-2 z-50 '>
       <nav className='flex-grow'>
@@ -30,6 +30,6 @@ function MainNavigation() {
       </nav>
     </header>
   );
-}
+};
 
 export default MainNavigation;

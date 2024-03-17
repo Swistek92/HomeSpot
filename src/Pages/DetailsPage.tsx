@@ -1,10 +1,10 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { context } from "../App";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Carousele, ContactButton, LoanCalulator } from "../Components";
 
-const DetailsPage = () => {
-  const { id } = useParams();
+const DetailsPage: React.FC = () => {
+  const { id } = useParams<{ id: string }>();
 
   const dataApartments = useContext(context)[0];
   const [apartment, setApartment] = useState(dataApartments[0]);

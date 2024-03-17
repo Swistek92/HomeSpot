@@ -25,7 +25,7 @@ const sortFunctions: { [key: string]: SortFunction } = {
   date_asc: (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
 } as const;
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
   /////
   const [sortBy, setSortBy] = useState<TypeSortOder>("DateAsc");
   const [type, setType] = useState<TypeApartments>("All");

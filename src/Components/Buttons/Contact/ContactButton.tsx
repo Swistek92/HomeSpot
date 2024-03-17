@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const ContactButton = () => {
+const ContactButton: React.FC = () => {
   return (
     <NavLink
       to={

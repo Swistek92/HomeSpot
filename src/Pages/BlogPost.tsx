@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { Carousele } from "../Components";
 import { context } from "../App";
 
-const BlogPost = () => {
+const BlogPost: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const dataArticles: Article[] = useContext(context)[1];

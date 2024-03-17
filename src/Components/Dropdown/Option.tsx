@@ -1,14 +1,12 @@
 import React from "react";
 
-const Option = ({
-  index,
-  commonName,
-  flag,
-}: {
+type OptionProps = {
   index: number;
   commonName: string;
   flag: string;
-}) => {
+};
+
+const Option: React.FC<OptionProps> = ({ index, commonName, flag }) => {
   return (
     <option
       key={index}
