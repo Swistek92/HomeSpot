@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useSwipeable } from "react-swipeable";
 
-const Carousele: React.FC<CarouseleProps> = ({ imgs }) => {
+const Carousele: React.FC<CarouseleProps> = ({ imgs, className }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef<HTMLDivElement | null>(null);
   const autoSlideTimeout = useRef<number | undefined>(undefined);
@@ -54,7 +54,7 @@ const Carousele: React.FC<CarouseleProps> = ({ imgs }) => {
 
   return (
     <div
-      className='flex flex-col items-center justify-center'
+      className={`flex flex-col items-center justify-center ${className || ""}`}
       {...handlers}
       onDoubleClick={handleFullScreen}
     >
@@ -62,7 +62,7 @@ const Carousele: React.FC<CarouseleProps> = ({ imgs }) => {
         <img
           src={imgs[currentIndex]}
           alt='Carousel slide'
-          className='w-full h-auto'
+          className='w-auto h-90'
           onMouseEnter={() => clearTimeout(autoSlideTimeout.current)}
           onMouseLeave={resetAutoSlideTimer}
         />

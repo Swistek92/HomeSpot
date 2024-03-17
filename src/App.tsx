@@ -11,6 +11,13 @@ import DetailsPage from "./Pages/DetailsPage";
 import { loader as dropdownLoader } from "./Components/Dropdown";
 import Blog from "./Pages/Blog";
 import BlogPost from "./Pages/BlogPost";
+import dataAdvertisement from "./Util/dataAdvertisement.json";
+import dataArticles from "./Util/dataArticles.json";
+import React from "react";
+
+const globalData: GlobalData = [dataAdvertisement, dataArticles];
+
+export const context = React.createContext(globalData);
 
 const routers = (
   <Route
@@ -29,7 +36,11 @@ const routers = (
 const router = createBrowserRouter(createRoutesFromElements(routers));
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <context.Provider value={globalData}>
+      <RouterProvider router={router} />
+    </context.Provider>
+  );
 }
 
 export default App;

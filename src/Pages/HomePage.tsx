@@ -1,4 +1,5 @@
-import data from "../Util/data.json";
+import { NavLink } from "react-router-dom";
+
 import {
   katowice,
   krakow,
@@ -7,8 +8,9 @@ import {
   warszawa,
   wroclaw,
 } from "../Assets/herb";
-import { useState } from "react";
-
+import { useContext, useState } from "react";
+import { context } from "../App";
+import data from "../Util/dataAdvertisement.json";
 const Herbs: Herbs = {
   default: polska,
   kraków: krakow,
@@ -48,6 +50,8 @@ const HomePage = () => {
   const [type, setType] = useState<TypeApartments>("All");
   const [min, setMin] = useState<number>(0);
   const [max, setMax] = useState<number>(0);
+  const dataAdvertisement = useContext(context)[0];
+
   /////
   const filterApartaments = (apartments: Home[]): Home[] => {
     let filtered = apartments;
@@ -64,7 +68,7 @@ const HomePage = () => {
     return filtered.slice().sort(sortFunctions[sortBy]);
   };
 
-  const apartaments: Home[] = filterApartaments(data);
+  const apartaments: Home[] = filterApartaments(dataAdvertisement);
   /////
   const handleChangeSortBy = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSortBy(e.target.value as TypeSortOder);
@@ -120,25 +124,15 @@ const HomePage = () => {
         />
       </div>
       {/* grid */}
-      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 p-4  '>
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 p-4  '>
         {apartaments.map((home, index) => (
-          <div
-            key={home.id}
-            className={`border-y-2 border-gray-600 p-4 md: py-3 `}
+          <NavLink
+            to={`/details/${home.id}`}
+            className='max-w-sm rounded overflow-hidden shadow-lg m-4 bg-white hover:bg-gray-100 transition-colors duration-200 ease-in-out'
           >
-            <h2 className='text-lg font-semibold'>{home.title}</h2>
-            <p className='text-sm text-gray-600'>{home.city}</p>
-            <p className='text-sm text-gray-600'>
-              {" "}
-              oglszenie dostepne od: {home.date}
-            </p>
-
-            <p className='mt-2'>{home.description}</p>
-            <p className='mt-2 font-semibold'>{home.price} zł</p>
-
-            <div className='relative mt-4'>
+            <div className='relative w-full h-48 '>
               <img
-                src={home.image}
+                src={home.images[0]}
                 alt={home.title}
                 className='rounded-lg w-full h-48 object-cover'
               />
@@ -148,7 +142,22 @@ const HomePage = () => {
                 className='absolute top-0 right-0 m-2 max-h-12'
               />
             </div>
-          </div>
+            <div className='px-6 py-4'>
+              <div className='font-bold text-xl mb-2'>{home.title}</div>
+              <p className='text-gray-700 text-base'>{home.description}</p>
+            </div>
+            <div className='px-6 pt-4 pb-2'>
+              <span className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>
+                {home.city}
+              </span>
+              <span className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>
+                {home.price} zł
+              </span>
+              <span className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700'>
+                Typ: {home.type}
+              </span>
+            </div>
+          </NavLink>
         ))}
         {apartaments.length === 0 && (
           <div>

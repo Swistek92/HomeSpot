@@ -4,7 +4,7 @@ type Home = {
   title: string;
   description: string;
   price: number;
-  image: string;
+  images: string[];
   date: string;
   type: string;
 };

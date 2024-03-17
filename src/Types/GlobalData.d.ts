@@ -1,0 +1,1 @@
+type GlobalData = [Home[], Article[]];
