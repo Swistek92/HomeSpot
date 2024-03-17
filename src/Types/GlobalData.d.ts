@@ -1,1 +1,1 @@
-type GlobalData = [Home[], Article[]];
+type GlobalData = [Apartment[], Article[]];

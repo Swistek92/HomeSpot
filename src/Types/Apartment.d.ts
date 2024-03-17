@@ -1,4 +1,4 @@
-type Home = {
+type Apartment = {
   id: number;
   city: string;
   title: string;

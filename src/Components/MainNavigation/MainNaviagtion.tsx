@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import logo from "../Assets/logo.jpg";
-import Dropdown from "./Dropdown";
+import { Dropdown } from "..";
+import { logo } from "../../Assets";
 function MainNavigation() {
   return (
     <header className='flex  justify-between items-center py-5 sticky top-0  bg-gray-500 border-b-2 z-50 '>

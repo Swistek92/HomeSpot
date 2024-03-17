@@ -4,11 +4,10 @@ import { Carousele } from "../Components";
 import { context } from "../App";
 
 const BlogPost = () => {
-  const { id } = useParams();
+  const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const dataArticles = useContext(context)[1];
-
-  const [data, setData] = useState(dataArticles[0]);
+  const dataArticles: Article[] = useContext(context)[1];
+  const [data, setData] = useState<Article>(dataArticles[0]);
   useEffect(() => {
     const postId = Number(id) - 1;
 
