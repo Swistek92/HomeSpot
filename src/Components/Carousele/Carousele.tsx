@@ -1,12 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
 import { useSwipeable } from "react-swipeable";
 
 const Carousele: React.FC<CarouseleProps> = ({ imgs, className }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef<HTMLDivElement | null>(null);
   const autoSlideTimeout = useRef<number | undefined>(undefined);
-
+  const [fullScreen, setFullScren] = useState<boolean>(false);
   useEffect(() => {
     resetAutoSlideTimer();
 
@@ -40,9 +39,11 @@ const Carousele: React.FC<CarouseleProps> = ({ imgs, className }) => {
 
   const handleFullScreen = () => {
     if (document.fullscreenElement) {
+      setFullScren(false);
       document.exitFullscreen();
     } else if (carouselRef.current) {
       carouselRef.current.requestFullscreen();
+      setFullScren(true);
     }
   };
 
@@ -84,7 +85,7 @@ const Carousele: React.FC<CarouseleProps> = ({ imgs, className }) => {
           onClick={handleFullScreen}
           className='absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white p-2'
         >
-          Pełny ekran
+          {fullScreen ? "zamknij pełny ekran" : "pelny ekran"}
         </button>
       </div>
     </div>

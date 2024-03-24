@@ -8,7 +8,7 @@ const LoanCalulator: React.FC<{ apartment: Apartment }> = ({ apartment }) => {
 
   const minDownPayment = apartment.price * 0.2;
   const maxDownPayment = apartment.price * 0.8;
-  const stepDownPayment = apartment.price * 0.05;
+  const stepDownPayment = apartment.price * 0.01;
 
   useEffect(() => {
     setDownPayment(minDownPayment);
@@ -59,7 +59,8 @@ const LoanCalulator: React.FC<{ apartment: Apartment }> = ({ apartment }) => {
           className='w-full cursor-pointer'
         />
         <div className='text-center text-gray-700'>
-          {((downPayment / apartment.price) * 100).toFixed(2)}%
+          {((downPayment / apartment.price) * 100).toFixed(2)}% (ok{" "}
+          {downPayment} zł)
         </div>
       </div>
 

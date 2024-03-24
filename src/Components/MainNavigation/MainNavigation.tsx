@@ -24,6 +24,7 @@ const MainNavigation: React.FC = () => {
                 alt='Logo'
                 className='max-h-10 rounded-xl transform hover:scale-105 transition-transform duration-200 md:max-h-24'
               />
+              <h1>Home Spot</h1>
             </NavLink>
           </li>
         </ul>

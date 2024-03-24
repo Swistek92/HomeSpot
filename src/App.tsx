@@ -6,7 +6,14 @@ import {
 } from "react-router-dom";
 import React from "react";
 import { dataAdvertisement, dataArticles } from "./Util";
-import { Blog, BlogPost, DetailsPage, Error, HomePage, RootLayout } from "./Pages";
+import {
+  Blog,
+  BlogPost,
+  DetailsPage,
+  Error,
+  RootLayout,
+  HomePage,
+} from "./Pages";
 import { dropdownLoader } from "./Components";
 
 const globalData: GlobalData = [dataAdvertisement, dataArticles];
@@ -20,7 +27,7 @@ const routers = (
     loader={dropdownLoader}
     errorElement={<Error />}
   >
-    <Route index element={<HomePage />} /> /
+    <Route index element={<HomePage />} />
     <Route path='details/:id' element={<DetailsPage />} />
     <Route path='blog' element={<Blog />} />
     <Route path='blog/:id' element={<BlogPost />} />

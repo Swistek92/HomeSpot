@@ -17,7 +17,6 @@ const Apartment: React.FC<{ apartment: Apartment }> = ({ apartment }) => {
 
   return (
     <NavLink
-      key={apartment.id}
       to={`/details/${apartment.id}`}
       className='max-w-sm rounded overflow-hidden shadow-lg m-4 bg-white hover:bg-gray-100 transition-colors duration-200 ease-in-out'
     >

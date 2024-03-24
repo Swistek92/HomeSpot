@@ -14,7 +14,7 @@ const Article: React.FC<Article> = ({ id, title, content }) => {
         <div className='w-full md:flex md:flex-row'>
           <img
             src={`https://picsum.photos/seed/${id}/600/400`}
-            alt='Random'
+            alt={`article about ${title}`}
             className='w-auto h-full '
           />
           <div className='p-4 md:w-1/2'>

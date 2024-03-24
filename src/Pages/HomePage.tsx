@@ -25,7 +25,7 @@ const sortFunctions: { [key: string]: SortFunction } = {
   date_asc: (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
 } as const;
 
-const HomePage: React.FC = () => {
+export const HomePage: React.FC = () => {
   /////
   const [sortBy, setSortBy] = useState<TypeSortOder>("DateAsc");
   const [type, setType] = useState<TypeApartments>("All");
@@ -90,12 +90,10 @@ const HomePage: React.FC = () => {
           </div>
         ) : (
           Apartments.map((apartment: Apartment) => (
-            <Apartment apartment={apartment} />
+            <Apartment key={apartment.id} apartment={apartment} />
           ))
         )}
       </div>
     </div>
   );
 };
-
-export default HomePage;
