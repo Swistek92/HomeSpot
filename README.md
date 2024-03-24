@@ -1,46 +1,19 @@
-# Getting Started with Create React App
+# HomeSpot
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to HomeSpot, the ultimate real estate listing interface built with React.js. This application is designed to showcase real estate listings, allowing users to browse and view detailed information about each property. It leverages a JSON file for property data and an external API for a dynamic country dropdown feature, providing a comprehensive and user-friendly experience for real estate enthusiasts and potential buyers.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Real Estate Listings**: Explore a curated list of properties, detailed with titles, descriptions, prices, and images.
+- **Detailed Property Views**: Click on any listing to access full details including a larger image and a comprehensive description.
+- **Country Dropdown**: Features a list of countries fetched from an external API, enhancing the application's functionality.
+- **Responsive Design**: Ensures an optimal browsing experience across various devices.
+- **Filtering Options**: Offers users the ability to filter listings based on specific criteria.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **React.js** (18.2.0): For building the user interface.
+- **React Router Dom** (6.22.3): For routing.
+- **TypeScript** (4.9.5): For type-checking.
+- **TailwindCSS** (3.4.1): For styling.
+- **Testing Libraries**: Jest and React Testing Library for component testing.
